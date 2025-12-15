@@ -15,19 +15,16 @@
 
  <!--                     NAVEGADOR                        -->   
 
-<!-- HEADER / MENU -->
 <div id="menu" class="container-fluid px-4 pt-0">
 
     <div class="container">
 
-        <!-- HEADER -->
         <div class="row align-items-start justify-content-between">
 
             <div class="col-auto col-md-3 pt-0">
                 <img src="./assets/pictures/tarjeta.png" class="logo mt-0" alt="Logo">
             </div>
 
-            <!-- BOTÓN  MOBILE -->
             <div class="col-auto d-md-none mt-4">
                 <button id="btnMenu" class="btn-menu">
                     <img src="./assets/icons/nav.svg" id="iconMenu" alt="Menú">
@@ -70,6 +67,7 @@
  <!--                     Header                        -->   
 
 <div id="miCarrusel" class="carousel slide" data-bs-ride="carousel">
+
   <!-- Indicadores -->
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#miCarrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -93,10 +91,10 @@
               <h2>Xero Design</h2>
             </div>
 
-            <ul id="Cont_Redes" class="d-flex justify-content-center align-items-center gap-2 mt-2">
+            <ul id="cont_redes" class="d-flex justify-content-center align-items-center gap-2 mt-2">
               <li>
                 <a href="https://www.instagram.com/xerodgn/" target="_blank">
-                  <div class="Redes d-flex flex-column justify-content-center align-items-center">
+                  <div class="redes d-flex flex-column justify-content-center align-items-center">
                     <img src="./assets/icons/ig.svg" alt="Logo instagram">
                     <h3>/xerodgn</h3>
                   </div>
@@ -104,7 +102,7 @@
               </li>
               <li>
                 <a href="https://x.com/Xero_DGN" target="_blank">
-                  <div class="Redes d-flex flex-column justify-content-center align-items-center">
+                  <div class="redes d-flex flex-column justify-content-center align-items-center">
                     <img src="./assets/icons/x.svg" alt="Logo x">
                     <h3>/Xero_DGN</h3>
                   </div>
@@ -112,7 +110,7 @@
               </li>
               <li>
                 <a href="https://www.behance.net/xero_design" target="_blank">
-                  <div class="Redes d-flex flex-column justify-content-center align-items-center">
+                  <div class="redes d-flex flex-column justify-content-center align-items-center">
                     <img src="./assets/icons/be.svg" alt="Logo behance">
                     <h3>/xero_design</h3>
                   </div>
@@ -121,9 +119,8 @@
             </ul>
           </div>
 
-          <!-- LOGO -->
-          <div id="Logo" class="d-flex justify-content-center align-items-center">
-            <img src="./assets/pictures/logo_color.png" alt="Logo Color" width="250" height="250">
+          <div id="logo" class="d-flex justify-content-center align-items-center">
+            <img src="./assets/pictures/logo_color.png" alt="Logo Color" width="250">
           </div>
 
         </div>
@@ -140,14 +137,14 @@
             <h1>Social media</h1>
             <img src="./assets/pictures/panthera.svg" alt="logo panthera" class="mb-3">
 
-            <ul id="Cont_Redes" class="d-flex justify-content-center align-items-center gap-2 mt-2">
+            <ul id="cont_redes" class="d-flex justify-content-center align-items-center gap-2 mt-2">
               <li>
-                <div class="Redes">
+                <div class="redes">
                   <h3>Agencia: <strong>Phantera</strong></h3>
                 </div>
               </li>
               <li>
-                <div class="Redes">
+                <div class="redes">
                   <h3>Cliente: <strong>Phantera</strong></h3>
                 </div>
               </li>
@@ -214,7 +211,7 @@
 <div class="container my-5 py-5">
 
     <div class="text-center mb-4">
-        <span class="badge titulo-portadas">Proyectos destacados</span>
+        <span class="titulo-portadas">Proyectos destacados</span>
     </div>
 
     <!-- PORTADAS -->
@@ -441,27 +438,27 @@
       <!-- Nombre - Empresa -->
       <div class="row mt-4 g-3">
         <div class="col-md-6">
-          <input type="text" class="formulario" placeholder="Nombre*">
+          <input type="text" class="formulario" id="nombre" placeholder="Nombre*">
         </div>
         <div class="col-md-6">
-          <input type="text" class="formulario" placeholder="Empresa*">
+          <input type="text" class="formulario" id="empresa"  placeholder="Empresa*">
         </div>
       </div>
 
       <!-- Email - Teléfono -->
       <div class="row mt-3 g-3">
         <div class="col-md-6">
-          <input type="email" class="formulario" placeholder="Email*">
+          <input type="email" class="formulario" id="email" placeholder="Email*">
         </div>
         <div class="col-md-6">
-          <input type="text" class="formulario" placeholder="Teléfono*">
+          <input type="text" class="formulario" id="telefono" placeholder="Teléfono*">
         </div>
       </div>
 
       <!-- Descripción -->
       <div class="row mt-3">
         <div class="col-12">
-          <textarea class="formulario" rows="4"
+          <textarea class="formulario" rows="4" id="habilidades"
             placeholder="Resumen breve de tus habilidades y aspiración salarial.*"></textarea>
         </div>
       </div>

@@ -71,7 +71,6 @@ a {
     padding-bottom: 14px;
 }
 
-/* LOGO */
 .logo {
     width: 48px;
 }
@@ -102,7 +101,6 @@ a {
     background: var(--red);
 }
 
-/* ================= BOTÓN HAMBURGUESA ================= */
 
 .btn-menu {
     background: none;
@@ -180,7 +178,7 @@ a {
     border-radius: 10px;
 }
 
-.Redes {
+.redes {
     background-color: var(--cont1);
     padding: 5px 30px;
     border-radius: 10px;
@@ -192,10 +190,6 @@ a {
     top: -0px;
     height: auto;
 }
-
-
-
-
 
 /*------------------------Marcas----------------------*/
 
@@ -250,8 +244,6 @@ a {
     transform: scale(1.02);
     box-shadow: 0 10px 30px rgba(0,0,0,.25);
 }
-
-/* ================= TÍTULO ================= */
 
 .titulo-portadas {
     background: var(--boton);
@@ -383,8 +375,6 @@ a {
     gap: 10px;
 }
 
-/* ================= ICONO ================= */
-
 .icono-exp {
     width: 42px;
     height: 42px;
@@ -400,8 +390,6 @@ a {
     width: 20px;
 }
 
-/* ================= LINEA ================= */
-
 .linea-experiencia {
     position: absolute;
     top: 120px;
@@ -412,8 +400,6 @@ a {
     z-index: 1;
     transform: translateX(-50%);
 }
-
-/* ================= EXTRAS ================= */
 
 .badge-practicas {
     background: var(--red);
@@ -440,16 +426,12 @@ a {
     border-radius: 20px;
 }
 
-/* ================= TEXTOS + ICONOS ================= */
-
 .icon_text {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 15px;
 }
-
-/* ================= FORMULARIO ================= */
 
 .formulario {
     background-color: var(--fondo);
@@ -473,15 +455,11 @@ a {
     opacity: 0.6;
 }
 
-/* ================= CHECKBOX ================= */
-
 #terminos {
     width: 18px;
     height: 18px;
     accent-color: var(--violeta);
 }
-
-/* ================= BOTÓN ================= */
 
 .boton {
     background: var(--violeta);
@@ -498,6 +476,7 @@ a {
 }
 
 /*------------------------Footer----------------------*/
+
 .footer {
     background: var(--footer);
 }

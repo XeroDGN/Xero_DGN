@@ -142,7 +142,7 @@ p {
 /*------------------------Sobre mi----------------------*/
 
 #sobre-mi {
-    margin-top: 5rem; /* separa del top */
+    margin-top: 5rem;
 }
 
 #sobre-mi .row {
@@ -191,7 +191,7 @@ p {
 }
 
 #Foto {
-    border-radius: 1rem; /* rounded-3 */
+    border-radius: 30px;
     object-fit: cover;
     height: 220px;
 }
