@@ -24,7 +24,7 @@
         <div class="row align-items-start justify-content-between">
 
             <!-- LOGO (PEGADO ARRIBA) -->
-            <div class="col-auto pt-0">
+            <div class="col-auto col-md-3 pt-0">
                 <img src="./assets/pictures/tarjeta.png" class="logo mt-0" alt="Logo">
             </div>
 
@@ -156,21 +156,50 @@
     </marquee>
 </div>
 
- <!--                     carrusel                        -->
- <!--<marquee behavior="scroll" direction="left" scrollamount="10" class="carrusel_marquee">--> 
+ <!--                     portadas                        -->
 
+<div class="container my-5 py-5">
 
-<div class="container my-5 d-flex justify-content-center flex-column align-items-center">
+    <!-- TÍTULO -->
+    <div class="text-center mb-4">
+        <span class="badge titulo-portadas">Proyectos destacados</span>
+    </div>
 
-    <div class="carrusel_cont">
-        <div class="carrusel" id="carrusel">
-            <ul id="portadas">
-                <li id="portada1"><img src="./assets/pictures/portada_panthera.png" alt="Portada Pantera"></li>
-                <li id="portada2"><img src="./assets/pictures/portada_alltruismo.png" alt="Portada alltruismo"></li>
-                <li id="portada3"><img src="./assets/pictures/portada_aleluya.png" alt="Portada aleluya"></li>
-                <li id="portada4"><img src="./assets/pictures/portada_luuciia.png" alt="Portada luuciia"></li>
-            </ul>
+    <!-- PORTADAS -->
+    <div class="row g-3">
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="portada-link">
+                <img src="./assets/pictures/portada_panthera.png"
+                     alt="Proyecto Pantera"
+                     class="img-fluid portada-img">
+            </a>
         </div>
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="portada-link">
+                <img src="./assets/pictures/portada_alltruismo.png"
+                     alt="Proyecto Alltruismo"
+                     class="img-fluid portada-img">
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="portada-link">
+                <img src="./assets/pictures/portada_aleluya.png"
+                     alt="Proyecto Aleluya"
+                     class="img-fluid portada-img">
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="portada-link">
+                <img src="./assets/pictures/portada_luuciia.png"
+                     alt="Proyecto Luuciia"
+                     class="img-fluid portada-img">
+            </a>
+        </div>
+
     </div>
 
 </div>
@@ -231,11 +260,125 @@
 
     </div>
 
-</section>                    
+</section>     
+
+<!--                     EXPERIENCIA                        -->   
+
+<div class="container my-5">
+  <div class="row justify-content-center g-4">
+
+    <!-- EDUCACIÓN -->
+    <div class="col-12 col-md-5">
+      <div class="p-4 card-info">
+
+        <h1 class="mb-4">Educación</h1>
+
+        <div class="item-info">
+          <div>
+            <h2>Bootcamp:</h2>
+            <h3>Desarrollo web</h3>
+            <p>BIT - Universidad iberoamericana</p>
+          </div>
+          <span class="fecha">2025 - Actual</span>
+        </div>
+
+        <div class="item-info">
+          <div>
+            <h2>Especialización:</h2>
+            <h3>Diseño publicitario en medios digitales</h3>
+            <p>Universidad autónoma de occidente</p>
+          </div>
+          <span class="fecha">2024 - 2025</span>
+        </div>
+
+        <div class="item-info">
+          <div>
+            <h2>Título universitario:</h2>
+            <h3>Diseño de la Comunicación Gráfica</h3>
+            <p>Universidad autónoma de occidente</p>
+          </div>
+          <span class="fecha">2019 - 2024</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- EXPERIENCIA -->
+    <div class="col-12 col-md-5">
+      <div class="p-4 card-info card-experiencia position-relative">
+
+        <h1 class="mb-4">Experiencia</h1>
+
+        <!-- LINEA VERTICAL -->
+        <div class="linea-experiencia"></div>
+
+        <!-- ITEM -->
+        <div class="exp-item">
+          <div class="icono-exp">
+            <img src="./assets/icons/trabajo.svg" alt="Trabajo">
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h2>ADB:</h2>
+            </div>
+            <h3>Graphic & web designer</h3>
+            <p>Producción de contenido visual para redes sociales, impresos y prototipo web.</p>
+          </div>
+          <span class="fecha">Enero 2025 - actualidad</span>
+        </div>
+
+        <div class="exp-item">
+          <div class="icono-exp">
+            <img src="./assets/icons/trabajo.svg" alt="Trabajo">
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h2>Portafolio Montana:</h2>
+            </div>
+            <h3>Graphic & audiovisual designer</h3>
+            <p>Diseño de piezas digitales, impresas y fotografía.</p>
+          </div>
+          <span class="fecha">Sep 2024 - Dic 2024</span>
+        </div>
+
+        <div class="exp-item">
+          <div class="icono-exp">
+            <img src="./assets/icons/trabajo.svg" alt="Trabajo">
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h2>Panthera Hub:</h2>
+            </div>
+            <h3>Graphic & web designer <span class="badge-practicas">Prácticas</span></h3>
+            <p>Creación de piezas publicitarias y prototipado web.</p>
+          </div>
+          <span class="fecha">Dic 2023 - May 2024</span>
+        </div>
+
+        <div class="exp-item">
+          <div class="icono-exp">
+            <img src="./assets/icons/trabajo.svg" alt="Trabajo">
+          </div>
+          <div class="exp-content">
+            <div class="exp-header">
+              <h2>Freelance:</h2>
+            </div>
+            <h3>Graphic designer</h3>
+            <p>Desarrollo de marcas visuales y piezas gráficas.</p>
+          </div>
+          <span class="fecha">2019 - 2023</span>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
  
  <!--                     FORMULARIO                        -->   
-<div class="container d-flex justify-content-center align-items-center min-vh-100">
-  <div class="row gap-4">
+
+<div class="container min-vh-100 d-flex align-items-center">
+  <div class="row justify-content-center gap-4 w-100">
 
     <!-- IZQUIERDA -->
     <div class="col-12 col-md-6 p-4" id="izquierda">
@@ -243,47 +386,39 @@
       <h1>Lleva tu marca</h1>
       <h2>al siguiente nivel:</h2>
 
-       <!-- Nombre - Empresa -->
+      <!-- Nombre - Empresa -->
       <div class="row mt-4 g-3">
-
         <div class="col-md-6">
           <input type="text" class="formulario" placeholder="Nombre*">
         </div>
-
         <div class="col-md-6">
           <input type="text" class="formulario" placeholder="Empresa*">
         </div>
-
       </div>
 
       <!-- Email - Teléfono -->
-      <div class="row mt-2 g-3">
-
+      <div class="row mt-3 g-3">
         <div class="col-md-6">
           <input type="email" class="formulario" placeholder="Email*">
         </div>
-
         <div class="col-md-6">
           <input type="text" class="formulario" placeholder="Teléfono*">
         </div>
-
       </div>
 
       <!-- Descripción -->
       <div class="row mt-3">
-
         <div class="col-12">
-          <textarea class="formulario" rows="4" placeholder="Resumen breve de tus habilidades y aspiración salarial.*"></textarea>
+          <textarea class="formulario" rows="4"
+            placeholder="Resumen breve de tus habilidades y aspiración salarial.*"></textarea>
         </div>
-
       </div>
 
       <!-- Términos + botón -->
-      <div class="row mt-3">
-
+      <div class="row mt-4 align-items-center">
         <div class="col-md-6 d-flex align-items-center">
           <input type="checkbox" id="terminos" class="me-2">
-          <h3>Acepto términos y condiciones</h3>
+          <h3 class="mb-0">Acepto términos y condiciones</h3>
         </div>
 
         <div class="col-md-6 d-flex justify-content-md-end mt-3 mt-md-0">
@@ -311,7 +446,6 @@
           <h2>Teléfono:</h2>
         </div>
         <h3>+57 317 486 3433</h3>
-
       </div>
 
       <!-- Redes sociales -->
@@ -335,7 +469,6 @@
           <h2>Behance:</h2>
         </div>
         <h3>/xero_design</h3>
-
       </div>
 
     </div>
@@ -366,6 +499,8 @@
                     <li><a href="./html/portafolio.html">Portafolio</a></li>
                     <li><a href="./html/sobremi.html">Sobre mí</a></li>
                     <li><a href="./html/contactame.html">Contáctame</a></li>
+                    <li><a href="./html/login.html">Login</a></li>
+                    <li><a href="./html/registro.html">Registro</a></li>
                 </ul>
             </div>
 
