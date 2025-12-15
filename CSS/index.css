@@ -67,7 +67,7 @@ a {
     top: 0;
     width: 100%;
     z-index: 9999;
-    padding: 14px 0;
+    padding-bottom: 14px;
 }
 
 /* LOGO */
@@ -88,8 +88,6 @@ a {
 .nav-menu a {
     padding: 8px 18px;
     border-radius: 25px;
-    color: white;
-    font-size: 15px;
     transition: 0.3s;
 }
 
@@ -129,27 +127,10 @@ a {
     transform: translateY(-100%);
     transition: 0.4s ease;
     z-index: 9998;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .mobile-nav.active {
     transform: translateY(0);
-}
-
-.mobile-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-    text-align: center;
-}
-
-.mobile-nav a {
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
 }
 
 /*------------------------Header----------------------*/
@@ -207,17 +188,21 @@ a {
     overflow: hidden;
     padding: 25px;
     border: 1px solid var(--boton);
-    background: linear-gradient(90deg, #1C1947 0%, #5E39AD 100%);
+    background: linear-gradient(
+    90deg,
+    #5E39AD 0%,
+    #070A29 50%,
+    #1C1947 100%
+    );
 }
 
 #marcas {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 50px;
+    list-style: none;
     padding: 0;
     margin: 0;
-    list-style: none;
-    animation: slideRight 18s linear infinite;
 }
 
 #marcas img {
@@ -228,13 +213,8 @@ a {
 #marcas h4 {
     font-size: 24px;
     font-weight: 700;
-    color: rgba(255, 255, 255, 0.25);
+    color: rgba(255, 255, 255, 0.3);
     margin: 0;
-}
-
-@keyframes slideRight {
-    0% { transform: translateX(-50%); }
-    100% { transform: translateX(0); }
 }
 
 /*------------------------carrusel----------------------*/

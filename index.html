@@ -15,20 +15,21 @@
 
  <!--                     NAVEGADOR                        -->   
 
-<div id="menu" class="container-fluid px-4">
+<!-- HEADER / MENU -->
+<div id="menu" class="container-fluid px-4 pt-0">
 
     <div class="container">
 
         <!-- HEADER -->
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-start justify-content-between">
 
-            <!-- LOGO (MISMO PARA MOBILE Y DESKTOP) -->
-            <div class="col-auto">
-                <img src="./assets/pictures/tarjeta.png" class="logo" alt="Logo">
+            <!-- LOGO (PEGADO ARRIBA) -->
+            <div class="col-auto pt-0">
+                <img src="./assets/pictures/tarjeta.png" class="logo mt-0" alt="Logo">
             </div>
 
             <!-- BOTÓN HAMBURGUESA (SOLO MOBILE) -->
-            <div class="col-auto d-md-none">
+            <div class="col-auto d-md-none mt-4">
                 <button id="btnMenu" class="btn-menu">
                     <img src="./assets/icons/nav.svg" id="iconMenu" alt="Menú">
                 </button>
@@ -36,7 +37,7 @@
 
             <!-- NAVEGACIÓN DESKTOP -->
             <div class="col-md-6 d-none d-md-flex justify-content-center">
-                <ul id="Navegacion" class="nav-menu d-flex gap-4 mb-0">
+                <ul id="Navegacion" class="nav-menu d-flex gap-4 mb-0  mt-4">
                     <li><a class="active" href="">Inicio</a></li>
                     <li><a href="./html/portafolio.html">Portafolio</a></li>
                     <li><a href="./html/sobremi.html">Sobre mí</a></li>
@@ -46,7 +47,7 @@
 
             <!-- ACCESOS DESKTOP -->
             <div class="col-md-3 d-none d-md-flex justify-content-end">
-                <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0">
+                <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0 mt-4">
                     <li><a href="./html/login.html">Login</a></li>
                     <li><a href="./html/registro.html">Registro</a></li>
                 </ul>
@@ -58,7 +59,7 @@
 
 <!-- MENÚ MOBILE -->
 <div id="mobileNav" class="mobile-nav d-md-none">
-    <ul>
+    <ul class="d-flex flex-column gap-4 text-center pt-5">
         <li><a href="">Inicio</a></li>
         <li><a href="./html/portafolio.html">Portafolio</a></li>
         <li><a href="./html/sobremi.html">Sobre mí</a></li>
@@ -125,17 +126,34 @@
 <!--                     Marcas                       -->   
 
 <div class="marcas_carrusel">
-    <ul id="marcas">
-        <li><h4>2021</h4></li>
-        <li><img src="./assets/pictures/realme.png" alt="Logo realme"></li>
-        <li><h4>2023</h4></li>
-        <li><img src="./assets/pictures/panthera.svg" alt="Logo panthera"></li>
-        <li><h4>2024</h4></li>
-        <li><img src="./assets/pictures/montana.svg" alt="Logo montana"></li>
-        <li><h4>2025</h4></li>
-        <li><img src="./assets/pictures/adb.svg" alt="Logo adb"></li>
+    <marquee behavior="scroll" direction="right" scrollamount="5" loop="infinite">
+        <ul id="marcas">
+            <li><h4>2021</h4></li>
+            <li><img src="./assets/pictures/realme.png" alt="Logo realme"></li>
 
-    </ul>
+            <li><h4>2023</h4></li>
+            <li><img src="./assets/pictures/panthera.svg" alt="Logo panthera"></li>
+
+            <li><h4>2024</h4></li>
+            <li><img src="./assets/pictures/montana.svg" alt="Logo montana"></li>
+
+            <li><h4>2025</h4></li>
+            <li><img src="./assets/pictures/adb.svg" alt="Logo adb"></li>
+
+            <!-- DUPLICADO PARA LOOP SUAVE -->
+            <li><h4>2021</h4></li>
+            <li><img src="./assets/pictures/realme.png" alt="Logo realme"></li>
+
+            <li><h4>2023</h4></li>
+            <li><img src="./assets/pictures/panthera.svg" alt="Logo panthera"></li>
+
+            <li><h4>2024</h4></li>
+            <li><img src="./assets/pictures/montana.svg" alt="Logo montana"></li>
+
+            <li><h4>2025</h4></li>
+            <li><img src="./assets/pictures/adb.svg" alt="Logo adb"></li>
+        </ul>
+    </marquee>
 </div>
 
  <!--                     carrusel                        -->
