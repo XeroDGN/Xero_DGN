@@ -1,0 +1,293 @@
+
+body {
+    background: radial-gradient(circle at right, rgba(25, 23, 68, 1), rgba(3, 2, 28, 1));
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+:root{
+    --red: #f41052;
+    --violeta: #8260FF;
+    --boton: #2D2E40;
+    --cont1: #2D2E4030;
+    --cont2: #2E1B7230;
+    --text2: #8385B3;
+    --fondo: #03021C;
+    --footer: #0B0B23;
+}
+
+h1{ 
+    font-size: 50px; 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 900; 
+    color: white; 
+} 
+
+h2{ 
+    font-size: 20px; 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 400; 
+    color: white; 
+} 
+
+h3{ 
+    font-size: 12px; 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    color: white; 
+}
+
+ul{
+     list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+a {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*------------------------Navegador----------------------*/
+
+#menu {
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0)
+    );
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-bottom: 14px;
+}
+
+/* LOGO */
+.logo {
+    width: 48px;
+}
+
+/* ================= MENÚ DESKTOP ================= */
+
+.nav-menu {
+    background: rgba(0,0,0,0.35);
+    padding: 10px 6px;
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--boton);
+}
+
+.nav-menu a {
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: var(--boton);
+}
+
+/* LOGIN CTA */
+#Accesos li:first-child a {
+    background: var(--red);
+}
+
+/* ================= BOTÓN HAMBURGUESA ================= */
+
+.btn-menu {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.btn-menu img {
+    width: 28px;
+}
+
+/* ================= MENÚ MOBILE ================= */
+
+.mobile-nav {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.95),
+        rgba(3,2,28,0.95)
+    );
+    backdrop-filter: blur(10px);
+    transform: translateY(-100%);
+    transition: 0.4s ease;
+    z-index: 9998;
+}
+
+.mobile-nav.active {
+    transform: translateY(0);
+}
+
+/*------------------------Header----------------------*/
+
+#header {
+    background: radial-gradient(circle at bottom,
+        rgba(74, 50, 195, 0.6) 0%,
+        rgba(3, 2, 28, 1) 50%);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    #header {
+        padding-top: 150px
+    }
+}
+
+#presentacion {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+#marca {
+    background-color: var(--red);
+    padding: 5px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Redes {
+    background-color: var(--cont1);
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 1px solid var(--boton);
+}
+
+#Logo img {
+    max-width: 100%;
+    top: -0px;
+    height: auto;
+}
+
+/*------------------------Marcas----------------------*/
+
+.marcas_carrusel {
+    width: 100%;
+    overflow: hidden;
+    padding: 25px;
+    border: 1px solid var(--boton);
+    background: linear-gradient(
+    90deg,
+    #5E39AD 0%,
+    #070A29 50%,
+    #1C1947 100%
+    );
+}
+
+#marcas {
+    display: inline-flex;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#marcas img {
+    height: 40px;
+    width: auto;
+}
+
+#marcas h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+}
+
+/*------------------------portadas----------------------*/
+
+.portada-link {
+    display: block;
+}
+
+.portada-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.portada-link:hover .portada-img {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+/* ================= TÍTULO ================= */
+
+.titulo-seccion {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.linea-seccion {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+/*------------------------Footer----------------------*/
+.footer {
+    background: var(--footer);
+}
+
+.footer-logo {
+    width: 45px;
+}
+
+.footer_separacion {
+    width: 1px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 20px;
+}
+
+.footer_menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.footer_menu a:hover {
+    color: var(--violeta);
+}
+
+.footer a img {
+    width: 22px;
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.footer a img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
