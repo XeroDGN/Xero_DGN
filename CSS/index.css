@@ -147,6 +147,17 @@ a {
     align-items: center;
 }
 
+#header2 {
+    background: radial-gradient(circle at bottom,
+        rgba(218, 30, 80, 0.6) 0%,
+        rgb(19, 0, 32) 50%);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media (max-width: 768px) {
     #header {
         padding-top: 150px
@@ -181,6 +192,8 @@ a {
     top: -0px;
     height: auto;
 }
+
+
 
 
 
