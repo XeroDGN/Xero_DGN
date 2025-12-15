@@ -55,6 +55,12 @@ a {
     font-weight: 400;
 }
 
+
+p {
+    font-size: 15px;
+    color: white;
+}
+
 /*------------------------Navegador----------------------*/
 
 #menu {
@@ -135,25 +141,28 @@ a {
 
 /*------------------------Sobre mi----------------------*/
 
-/* Contenedor principal */
-#Tarjeta_Presentacion {
-    border-radius: 40px;
-    padding-bottom: 50px; /* Si quieres un padding extra abajo */
+#sobre-mi {
+    margin-top: 5rem; /* separa del top */
 }
 
-/* Imagen principal */
+#sobre-mi .row {
+    justify-content: center;
+    align-items: center;
+}
+
+#Tarjeta_Presentacion {
+    border-radius: 40px;
+    padding-bottom: 50px;
+}
+
 #Foto {
+    max-width: 100%;
     height: 220px;
     object-fit: cover;
     border-radius: 30px;
+    object-fit: cover;
 }
 
-/* Sobre mí */
-#Sobre_mi {
-    color: white;
-}
-
-/* Sección de contacto */
 #contactame {
     color: white;
     background-color: rgba(45, 46, 64, 0.3);
@@ -162,18 +171,12 @@ a {
     padding: 20px;
 }
 
-/* Cada contacto individual */
 .contact img {
-    width: 30px; /* Ajusta tamaño de iconos */
+    width: 30px;
     height: 30px;
 }
 
-/* Información adicional */
-#Informacion {
-    color: white;
-}
 
-/* Cada Info dentro de Información */
 .Info {
     background-color: rgba(45, 46, 64, 0.125);
     border: 1px solid #2D2E40;
@@ -181,40 +184,69 @@ a {
     padding: 15px;
 }
 
-/*------------------------experiencia----------------------*/
+/*==================== EXPERIENCIA ====================*/
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
 
+#Foto {
+    border-radius: 1rem; /* rounded-3 */
+    object-fit: cover;
+    height: 220px;
+}
+
+/*==================== CONTENEDORES ====================*/
+.bg-card {
+    background-color: var(--cont1);
+    border: 1px solid var(--boton);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.bg-card-experiencia {
+    border-color: var(--violeta);
+}
+
+#contactame {
+    background-color: var(--cont1);
+    border: 1px solid var(--boton);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+}
+
+/*==================== INFO BOX ====================*/
+.Info {
+    background-color: rgba(45, 46, 64, 0.125);
+    border: 1px solid var(--boton);
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Info div h2,
+.Info div h3 {
+    margin: 0;
+}
+
+/*==================== MISIÓN & VISIÓN ====================*/
 .card-info {
     background-color: var(--cont1);
     border: 1px solid var(--boton);
-    border-radius: 20px;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: white;
 }
 
 .card-experiencia {
     border: 1px solid var(--violeta);
-}
-
-/* ================= EDUCACIÓN ================= */
-
-.item-info {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-bottom: 22px;
-}
-
-.item-info p {
-    font-size: 12px;
-    color: var(--text2);
-}
-
-.fecha {
-    font-size: 11px;
-    color: var(--text2);
-    white-space: nowrap;
-    position: absolute;
-    right: 10px;
-    top: 0;
-    z-index: 3;
 }
 
 /* ================= EXPERIENCIA ================= */

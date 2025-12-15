@@ -182,6 +182,8 @@ a {
     height: auto;
 }
 
+
+
 /*------------------------Marcas----------------------*/
 
 .marcas_carrusel {
@@ -305,15 +307,9 @@ a {
     opacity: 0.9;
 }
 
-.servicio-card h3 {
-    color: white;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
 .servicio-card p {
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -339,7 +335,7 @@ a {
 }
 
 .item-info p {
-    font-size: 12px;
+    font-size: 13px;
     color: var(--text2);
 }
 

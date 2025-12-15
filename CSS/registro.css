@@ -134,124 +134,99 @@ a {
     transform: translateY(0);
 }
 
-/*------------------------Header----------------------*/
+/*------------------------Formulario----------------------*/
 
-#header {
-    background: radial-gradient(circle at bottom,
-        rgba(74, 50, 195, 0.6) 0%,
-        rgba(3, 2, 28, 1) 50%);
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#izquierda {
+    background-color: var(--cont2);
+    border: 1px solid var(--violeta);
+    border-radius: 20px;
 }
 
-@media (max-width: 768px) {
-    #header {
-        padding-top: 150px
-    }
-}
 
-#presentacion {
-    color: white;
+/* ================= TEXTOS + ICONOS ================= */
+
+.icon_text {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 10px;
-    text-align: center;
+    margin-top: 15px;
 }
 
-#marca {
-    background-color: var(--red);
-    padding: 5px 20px;
-    margin-top: 10px;
-    border-radius: 10px;
-}
+/* ================= FORMULARIO ================= */
 
-.Redes {
-    background-color: var(--cont1);
-    padding: 5px 30px;
-    border-radius: 10px;
-    border: 1px solid var(--boton);
-}
-
-#Logo img {
-    max-width: 100%;
-    top: -0px;
-    height: auto;
-}
-
-/*------------------------Marcas----------------------*/
-
-.marcas_carrusel {
-    width: 100%;
-    overflow: hidden;
-    padding: 25px;
-    border: 1px solid var(--boton);
-    background: linear-gradient(
-    90deg,
-    #5E39AD 0%,
-    #070A29 50%,
-    #1C1947 100%
-    );
-}
-
-#marcas {
-    display: inline-flex;
-    align-items: center;
-    gap: 50px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-#marcas img {
-    height: 40px;
-    width: auto;
-}
-
-#marcas h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.3);
-    margin: 0;
-}
-
-/*------------------------portadas----------------------*/
-
-.portada-link {
-    display: block;
-}
-
-.portada-img {
-    width: 100%;
-    height: auto;
-    border-radius: 16px;
-    transition: transform .3s ease, box-shadow .3s ease;
-}
-
-.portada-link:hover .portada-img {
-    transform: scale(1.02);
-    box-shadow: 0 10px 30px rgba(0,0,0,.25);
-}
-
-/* ================= TÍTULO ================= */
-
-.titulo-seccion { 
+.formulario {
+    background-color: var(--fondo);
     color: white;
-    font-size: 15px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
+    border: 1px solid var(--boton);
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    box-sizing: border-box; /* Evita que el padding rompa el ancho */
 }
 
-.linea-seccion {
-    height: 1px;
-    background-color: rgba(255, 255, 255, 0.3);
+.formulario:focus {
+    outline: none;
+    border-color: var(--violeta);
 }
 
+/* Placeholder */
+.formulario::placeholder {
+    color: white;
+    opacity: 0.8;
+}
 
+/* Compatibilidad placeholder */
+::-webkit-input-placeholder { color: white; opacity: 0.8; }
+:-moz-placeholder { color: white; opacity: 0.8; }
+::-moz-placeholder { color: white; opacity: 0.8; }
+:-ms-input-placeholder { color: white; opacity: 0.8; }
+
+/* ================= LABELS ================= */
+label {
+    color: white;
+    font-weight: 400;
+}
+
+/* ================= CHECKBOX ================= */
+#terminos, #rememberMe {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--violeta);
+}
+
+/* ================= BOTÓN ================= */
+.boton {
+    background: var(--violeta);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 40px;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.boton:hover {
+    cursor: pointer;
+    filter: brightness(1.1);
+}
+
+.boton-link {
+    background: none;
+    border: none;
+    padding: 0;
+    color: white;
+    font-weight: bold;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.boton-link:hover {
+    text-decoration: underline;
+    filter: none;
+}
 
 /*------------------------Footer----------------------*/
 .footer {

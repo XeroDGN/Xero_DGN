@@ -1,22 +1,184 @@
-!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/portafolio.css">
+    <link rel="stylesheet" href="../css/registro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="icon" href="../assets/pictures/logo_color.png">
+    <link rel="icon" href="./assets/pictures/logo_color.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Xero_Design</title>
   </head>
   <body>
 
+ <!--                     NAVEGADOR                        -->   
+
+<!-- HEADER / MENU -->
+<div id="menu" class="container-fluid px-4 pt-0">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="row align-items-start justify-content-between">
+
+            <div class="col-auto col-md-3 pt-0">
+                <img src="../assets/pictures/tarjeta.png" class="logo mt-0" alt="Logo">
+            </div>
+
+            <!-- BOTÓN  MOBILE -->
+            <div class="col-auto d-md-none mt-4">
+                <button id="btnMenu" class="btn-menu">
+                    <img src="../assets/icons/nav.svg" id="iconMenu" alt="Menú">
+                </button>
+            </div>
+
+            <!-- DESKTOP -->
+            <div class="col-md-6 d-none d-md-flex justify-content-center">
+                <ul id="Navegacion" class="nav-menu d-flex gap-4 mb-0  mt-4">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../html/portafolio.html">Portafolio</a></li>
+                    <li><a href="../html/sobremi.html">Sobre mí</a></li>
+                    <li><a href="../html/contactame.html">Contáctame</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 d-none d-md-flex justify-content-end">
+                <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0 mt-4">
+                    <li><a href="../html/login.html">Login</a></li>
+                    <li><a class="active" href="../html/registro.html">Registro</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- MENÚ MOBILE -->
+<div id="mobileNav" class="mobile-nav d-md-none">
+    <ul class="d-flex flex-column gap-4 text-center pt-5">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../html/portafolio.html">Portafolio</a></li>
+        <li><a href="../html/sobremi.html">Sobre mí</a></li>
+        <li><a href="../html/contactame.html">Contáctame</a></li>
+        <li><a href="../html/login.html">Login</a></li>
+        <li><a href="../html/registro.html">Registro</a></li>
+    </ul>
+</div>
+ 
+ <!--                     FORMULARIO                        -->   
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+  <div class="row justify-content-center w-100">
+
+    <div class="col-12 col-md-6 p-4" id="izquierda">
+
+      <h1 class="mb-2">Postula tu empresa</h1>
+      <h2 class="mb-4">y accede a contenido exclusivo.</h2>
+
+      <!-- Nombres - Apellido -->
+      <div class="row mb-3 g-3">
+        <div class="col-md-6">
+          <label for="nombres">Nombres</label>
+          <input type="text" id="nombres" class="formulario" placeholder="Ingrese sus nombres">
+        </div>
+        <div class="col-md-6">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" class="formulario" placeholder="Ingrese su apellido">
+        </div>
+      </div>
+
+      <!-- Empresa -->
+      <div class="mb-3">
+        <label for="empresa">Empresa</label>
+        <input type="text" id="empresa" class="formulario" placeholder="Ingrese el nombre de la empresa">
+      </div>
+
+      <!-- Cargo - Teléfono -->
+      <div class="row mb-3 g-3">
+        <div class="col-md-6">
+          <label for="cargo">Cargo</label>
+          <input type="text" id="cargo" class="formulario" placeholder="Ingrese su cargo">
+        </div>
+        <div class="col-md-6">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" class="formulario" placeholder="Ingrese su teléfono">
+        </div>
+      </div>
+
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email">Email</label>
+        <input type="email" id="email" class="formulario" placeholder="Ingrese su correo electrónico">
+      </div>
+
+      <!-- Contraseña -->
+      <div class="mb-3">
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" class="formulario" placeholder="Ingrese su contraseña">
+      </div>
+
+      <!-- Términos -->
+      <div class="d-flex align-items-center mb-3">
+        <input type="checkbox" id="terminos" class="me-2">
+        <label for="terminos">Acepto términos y condiciones</label>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" class="boton w-100 mb-2">Postúlarme</button>
+
+    </div>
+
+  </div>
+</div>
 
 
+ <!--                     Footer                        -->
+ <footer class="footer container-fluid py-4">
 
-              
+    <div class="container">
+        <div class="row justify-content-center align-items-center text-center text-md-start">
+
+            <!-- LOGO -->
+            <div class="col-12 col-md-auto d-flex justify-content-center mb-3 mb-md-0">
+                <img src="./assets/icons/logo_white.svg" alt="Logo" class="footer-logo">
+            </div>
+
+            <!-- SEPARADOR -->
+            <div class="col-md-auto d-none d-md-block">
+                <div class="footer_separacion"></div>
+            </div>
+
+            <!-- MENÚ -->
+            <div class="col-12 col-md d-flex justify-content-center">
+                <ul class="footer_menu d-flex gap-5 list-unstyled mb-0">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="../html/portafolio.html">Portafolio</a></li>
+                    <li><a href="../html/sobremi.html">Sobre mí</a></li>
+                    <li><a href="../html/contactame.html">Contáctame</a></li>
+                    <li><a href="../html/login.html">Login</a></li>
+                    <li><a href="../html/registro.html">Registro</a></li>
+                </ul>
+            </div>
+
+            <!-- SEPARADOR -->
+            <div class="col-md-auto d-none d-md-block">
+                <div class="footer_separacion"></div>
+            </div>
+
+            <!-- ICONOS REDES -->
+            <div class="col-12 col-md-auto d-flex justify-content-center gap-4 mt-3 mt-md-0">
+                <a href="https://x.com/Xero_DGN" target="_blank"><img src="../assets/icons/x.svg" alt="logo X"></a>
+                <a href="https://www.instagram.com/xerodgn/" target="_blank"><img src="../assets/icons/ig.svg" alt="logo Instagram"></a>
+                <a href="https://www.behance.net/xero_design" target="_blank"><img src="../assets/icons/be.svg" alt="logo Behance"></a>
+            </div>
+
+        </div>
+    </div>
+
+</footer>  
+<script src="./JS/index.js"></script>                    
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
