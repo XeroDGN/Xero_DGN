@@ -57,32 +57,29 @@ a {
 
 /*------------------------Navegador----------------------*/
 
-#bandera img {
-    position: fixed;
-    top: 0px;
-    width: 50px;
-}
-
 #menu {
-     background: linear-gradient(
-     to bottom,
-    rgba(0, 0, 0, 0.85) 0%,
-    rgba(0, 0, 0, 0.4) 50%,
-    rgba(0, 0, 0, 0) 100%
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0)
     );
-    position: fixed !important;
+    position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     width: 100%;
     z-index: 9999;
-    padding: 15px 0;
+    padding: 14px 0;
 }
 
+/* LOGO */
+.logo {
+    width: 48px;
+}
+
+/* ================= MENÚ DESKTOP ================= */
+
 .nav-menu {
-    background: rgba(0, 0, 0, 0.35);
-    margin-top: 10px;
-    padding: 10px 5px;
+    background: rgba(0,0,0,0.35);
+    padding: 10px 6px;
     border-radius: 40px;
     backdrop-filter: blur(8px);
     border: 1px solid var(--boton);
@@ -91,28 +88,67 @@ a {
 .nav-menu a {
     padding: 8px 18px;
     border-radius: 25px;
+    color: white;
+    font-size: 15px;
     transition: 0.3s;
 }
 
-.nav-menu a.active,
-.nav-menu a:hover {
+.nav-menu a:hover,
+.nav-menu a.active {
     background: var(--boton);
-    color: white;
 }
 
-.navbar-contenedor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 9999;
-    padding: 20px 0;
-    background: #1C1947;
-    border: 1px solid var(--boton);
-}
-
+/* LOGIN CTA */
 #Accesos li:first-child a {
     background: var(--red);
+}
+
+/* ================= BOTÓN HAMBURGUESA ================= */
+
+.btn-menu {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.btn-menu img {
+    width: 28px;
+}
+
+/* ================= MENÚ MOBILE ================= */
+
+.mobile-nav {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.95),
+        rgba(3,2,28,0.95)
+    );
+    backdrop-filter: blur(10px);
+    transform: translateY(-100%);
+    transition: 0.4s ease;
+    z-index: 9998;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav.active {
+    transform: translateY(0);
+}
+
+.mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    text-align: center;
+}
+
+.mobile-nav a {
+    font-size: 20px;
+    font-weight: 500;
     color: white;
 }
 
@@ -160,6 +196,7 @@ a {
 
 #Logo img {
     max-width: 100%;
+    top: -0px;
     height: auto;
 }
 
