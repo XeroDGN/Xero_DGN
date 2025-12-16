@@ -56,6 +56,10 @@ a {
     font-weight: 400;
 }
 
+p{
+    font-size: 13px !important;
+}
+
 /*------------------------Navegador----------------------*/
 
 #menu {
@@ -326,8 +330,10 @@ a {
     border-radius: 20px;
 }
 
-.card-experiencia {
+.card-exp {
     border: 1px solid var(--violeta);
+    background-color: var(--cont2);
+    border-radius: 20px;
 }
 
 /* ================= EDUCACIÓN ================= */
