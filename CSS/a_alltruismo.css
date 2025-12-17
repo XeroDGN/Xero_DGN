@@ -1,0 +1,546 @@
+
+body {
+    background: radial-gradient(circle at right, rgba(25, 23, 68, 1), rgba(3, 2, 28, 1));
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+:root{
+    --red: #f41052;
+    --violeta: #8260FF;
+    --boton: #2D2E40;
+    --cont1: #2D2E4030;
+    --cont2: #2E1B7230;
+    --text2: #8385B3;
+    --fondo: #03021C;
+    --footer: #0B0B23;
+}
+
+h1{ 
+    font-size: 50px; 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 900; 
+    color: white; 
+} 
+
+h2{ 
+    font-size: 20px; 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 400; 
+    color: white; 
+} 
+
+h3{ 
+    font-size: 12px; 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    color: white; 
+}
+
+ul{
+     list-style: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+a {
+    color: white;
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*------------------------Navegador----------------------*/
+
+#menu {
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0)
+    );
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding-bottom: 14px;
+}
+
+/* LOGO */
+.logo {
+    width: 48px;
+}
+
+/* ================= MENÚ DESKTOP ================= */
+
+.nav-menu {
+    background: rgba(0,0,0,0.35);
+    padding: 10px 6px;
+    border-radius: 40px;
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--boton);
+}
+
+.nav-menu a {
+    padding: 8px 18px;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+    background: var(--boton);
+}
+
+/* LOGIN CTA */
+#Accesos li:first-child a {
+    background: var(--red);
+}
+
+/* ================= BOTÓN HAMBURGUESA ================= */
+
+.btn-menu {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.btn-menu img {
+    width: 28px;
+}
+
+/* ================= MENÚ MOBILE ================= */
+
+.mobile-nav {
+    position: fixed;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.95),
+        rgba(3,2,28,0.95)
+    );
+    backdrop-filter: blur(10px);
+    transform: translateY(-100%);
+    transition: 0.4s ease;
+    z-index: 9998;
+}
+
+.mobile-nav.active {
+    transform: translateY(0);
+}
+
+/*------------------------header----------------------*/
+
+#header {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 120px;
+  padding: 120px 32px 0;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #3486DC 0%, #2324C5 100%);
+  overflow: visible;
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  right: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo pequeño (X visual) */
+.logo-topbar {
+  width: 14px;
+  opacity: 0.85;
+  pointer-events: none;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(0, 0, 0, 0.35);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: white;
+  white-space: nowrap;
+}
+
+.tag strong {
+  font-weight: 700;
+}
+
+.tag-red {
+  background: #e3173e;
+}
+
+/* =========================
+   CONTENIDO HEADER
+========================= */
+
+.header-content {
+  text-align: center;
+}
+
+.header-content h1 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+/* Logo Panthera */
+.logo-panthera {
+  max-width: 180px;
+  margin-bottom: 20px; /* más cerca del mockup */
+}
+
+/* =========================
+   MOCKUP / BANNER
+========================= */
+
+.mockup-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  /* Subido y sobresale controlado */
+  margin-top: -20px;
+  margin-bottom: -100px;
+}
+
+.mockup-img {
+  width: 100%;
+  max-width: 760px;
+  z-index: 2;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  #header {
+    padding: 100px 20px 0;
+  }
+
+  .logo-panthera {
+    max-width: 140px;
+    margin-bottom: 0px;
+  }
+
+  .mockup-wrapper {
+    margin-top: -12px;
+    margin-bottom: -60px;
+  }
+
+  .mockup-img {
+    max-width: 100%;
+  }
+
+  .tags {
+    justify-content: flex-end;
+  }
+}
+
+/*------------------------proceso----------------------*/
+
+/* ===============================
+   CONTENEDOR GENERAL
+================================ */
+.project-info {
+    color: #fff;
+}
+
+/* ===============================
+   ROLES
+================================ */
+.roles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.role-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    align-items: center;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    font-size: 14px;
+}
+
+.role-row span:first-child {
+    opacity: 0.7;
+}
+
+.role-row span:last-of-type {
+    font-weight: 600;
+}
+
+.role-row img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* ===============================
+   TEXTOS DEL PROYECTO
+================================ */
+.project-text {
+    margin-bottom: 28px;
+}
+
+.project-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.project-text h4 span {
+    opacity: 0.7;
+    font-weight: 400;
+}
+
+.project-text p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.85;
+    max-width: 90%;
+}
+
+/* ===============================
+   PROCESO DE TRABAJO
+================================ */
+.workflow {
+    padding-left: 20px;
+}
+
+.workflow h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.workflow h4 span {
+    font-weight: 400;
+    opacity: 0.7;
+}
+
+.workflow-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.workflow-list li {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.workflow-list li span {
+    font-weight: 500;
+}
+
+.workflow-list li.active {
+    color: #ff2b4a;
+    opacity: 1;
+}
+
+/* ===============================
+   PIEZAS GRÁFICAS
+================================ */
+.graphic-pieces {
+    color: #fff;
+}
+
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background: #f5c400;
+}
+
+.badge-practice {
+    background: #ff2b4a;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.graphic-pieces h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+/* ===============================
+   CHIPS
+================================ */
+.chips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 10px 25px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, #000000 0%, #454351 100%);
+    border: 1px solid #525252;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+.chips img {
+    width: 24px;
+    height: auto;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 991px) {
+    .workflow {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .project-text p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .graphic-pieces h2 {
+        font-size: 26px;
+    }
+
+    .role-row {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 6px;
+    }
+
+    .role-row img {
+        display: none;
+    }
+}
+
+
+/*------------------------collage----------------------*/
+.collage img {
+    transition: transform 0.3s ease;
+}
+
+.collage img:hover {
+    transform: scale(1.02);
+}
+
+/*------------------------portadas----------------------*/
+
+.portada-link {
+    display: block;
+}
+
+.portada-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.portada-link:hover .portada-img {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.titulo-portadas {
+    background: var(--boton);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 18px;
+    border-radius: 25px;
+    letter-spacing: .5px;
+}
+
+/*------------------------Footer----------------------*/
+.footer {
+    background: var(--footer);
+}
+
+.footer-logo {
+    width: 45px;
+}
+
+.footer_separacion {
+    width: 1px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 20px;
+}
+
+.footer_menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease;
+    font-size: 16px;
+}
+
+.footer_menu a:hover {
+    color: var(--violeta);
+}
+
+.footer a img {
+    width: 22px;
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+.footer a img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
