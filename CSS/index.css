@@ -151,8 +151,8 @@ p{
 
 #header2 {
     background: radial-gradient(circle at bottom,
-        rgba(218, 30, 80, 0.6) 0%,
-        rgb(19, 0, 32) 50%);
+        rgba(231, 6, 96, 0.6) 0%,
+        rgb(32, 0, 22) 50%);
     width: 100%;
     height: 90vh;
     display: flex;
@@ -195,6 +195,26 @@ p{
     height: auto;
 }
 
+.btn-slide {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #ff2b4a, #d31730);
+    transition: all 0.3s ease;
+}
+
+.btn-slide:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 43, 74, 0.35);
+    color: #fff;
+}
+
 /*------------------------Marcas----------------------*/
 
 .marcas_carrusel {
@@ -229,6 +249,17 @@ p{
     font-weight: 700;
     color: rgba(255, 255, 255, 0.3);
     margin: 0;
+}
+
+#marcas li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+/* ESPACIO ENTRE ORIGINAL Y DUPLICADO */
+#marcas li:nth-child(8) {
+    margin-right: 500px;
 }
 
 /*------------------------portadas----------------------*/

@@ -218,6 +218,17 @@ a {
     margin: 0;
 }
 
+#marcas li {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+/* ESPACIO ENTRE ORIGINAL Y DUPLICADO */
+#marcas li:nth-child(8) {
+    margin-right: 500px;
+}
+
 /*------------------------portadas----------------------*/
 
 .portada-link {
