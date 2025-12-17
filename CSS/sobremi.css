@@ -16,24 +16,40 @@ body {
     --footer: #0B0B23;
 }
 
-h1{ 
-    font-size: 50px; 
+h1 {
+    font-size: clamp(45px, 5vw, 65px);
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+h2{ 
+    font-size: clamp(30px, 4vw, 50px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
     font-weight: 900; 
     color: white; 
 } 
 
-h2{ 
-    font-size: 20px; 
+h3{ 
+    font-size: clamp(16px, 2vw, 20px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
-    font-weight: 400; 
+    font-weight: 900; 
     color: white; 
-} 
+}
 
-h3{ 
-    font-size: 12px; 
+h4{ 
+    font-size: clamp(13px, 2vw, 15px); 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    color: white; 
+}
+
+h5{ 
+    font-size: clamp(10px, 2vw, 13px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
     font-weight: 300; 
@@ -46,19 +62,25 @@ ul{
     padding: 0; 
 }
 
+strong{
+    font-weight: 900;
+}
+
 a {
     color: white;
     outline: none;
     box-shadow: none;
     text-decoration: none;
-    font-size: 15px;
+    font-size: clamp(12px, 2vw, 15px);
     font-weight: 400;
 }
 
-
-p {
-    font-size: 15px;
-    color: white;
+p{
+    font-size: clamp(10px, 2vw, 14px);
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    margin: 0; 
+    color: var(--text2);
 }
 
 /*------------------------Navegador----------------------*/
@@ -163,10 +185,9 @@ p {
     object-fit: cover;
 }
 
-#contactame {
-    color: white;
-    background-color: rgba(45, 46, 64, 0.3);
-    border: 1px solid #2D2E40;
+.contenedor1 {
+    background-color: var(--cont1);
+    border: 1px solid var(--boton);
     border-radius: 20px;
     padding: 20px;
 }
@@ -174,14 +195,6 @@ p {
 .contact img {
     width: 30px;
     height: 30px;
-}
-
-
-.Info {
-    background-color: rgba(45, 46, 64, 0.125);
-    border: 1px solid #2D2E40;
-    border-radius: 20px;
-    padding: 15px;
 }
 
 /*==================== EXPERIENCIA ====================*/
@@ -249,12 +262,13 @@ p {
     border: 1px solid var(--violeta);
 }
 
-/* ================= EXPERIENCIA ================= */
+/*------------------------experiencia----------------------*/
 
 .card-info {
     background-color: var(--cont1);
     border: 1px solid var(--boton);
     border-radius: 20px;
+    width: 100%;
 }
 
 .card-exp {
@@ -263,7 +277,7 @@ p {
     border-radius: 20px;
 }
 
-/* ================= EDUCACIÓN ================= */
+/*  EDUCACIÓN  */
 
 .item-info {
     display: flex;
@@ -278,21 +292,13 @@ p {
     max-width: 75%;
 }
 
-.item-info p {
-    font-size: 13px;
-    color: var(--text2);
-}
-
 .item-info .fecha {
-    font-size: 11px;
-    color: var(--text2);
     white-space: nowrap;
     margin-top: 4px;
 }
 
-
 .fecha {
-    font-size: 11px;
+    font-size: clamp (10px, 5vw, 12px);
     color: var(--text2);
     white-space: nowrap;
     position: absolute;
@@ -308,12 +314,6 @@ p {
     gap: 18px;
     margin-bottom: 26px;
     position: relative;
-}
-
-.exp-content p {
-    font-size: 12px;
-    color: var(--text2);
-    margin-top: 4px;
 }
 
 .exp-header {
@@ -344,12 +344,11 @@ p {
 .linea-experiencia {
     position: absolute;
     top: 120px;
-    left: 8.5%;
+    left: 45px;
     width: 2px;
-    height: calc(70% - 50px);
+    height: calc(85% - 160px);
     background: white;
     z-index: 1;
-    transform: translateX(-50%);
 }
 
 .badge-practicas {
@@ -379,20 +378,21 @@ p {
     box-shadow: 0 10px 30px rgba(0,0,0,.25);
 }
 
-/* ================= TÍTULO ================= */
-
 .titulo-portadas {
     background: var(--boton);
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
     padding: 10px 18px;
     border-radius: 25px;
     letter-spacing: .5px;
+    font-size: clamp(16px, 2vw, 20px); 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 900; 
+    color: white; 
 }
 
 
 /*------------------------Footer----------------------*/
+
 .footer {
     background: var(--footer);
 }
@@ -409,11 +409,7 @@ p {
 }
 
 .footer_menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
     transition: 0.3s ease;
-    font-size: 16px;
 }
 
 .footer_menu a:hover {

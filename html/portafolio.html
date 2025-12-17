@@ -13,7 +13,8 @@
   </head>
   <body>
 
-<!-- HEADER / MENU -->
+ <!--                     NAVEGADOR                        -->   
+
 <div id="menu" class="container-fluid px-4 pt-0">
 
     <div class="container">
@@ -21,19 +22,19 @@
         <!-- HEADER -->
         <div class="row align-items-start justify-content-between">
 
-            <div class="col-auto col-md-3 pt-0">
+            <div class="col-auto col-lg-3 pt-0">
                 <img src="../assets/pictures/tarjeta.png" class="logo mt-0" alt="Logo">
             </div>
 
             <!-- BOTÓN  MOBILE -->
-            <div class="col-auto d-md-none mt-4">
+            <div class="col-auto d-lg-none mt-4">
                 <button id="btnMenu" class="btn-menu">
                     <img src="../assets/icons/nav.svg" id="iconMenu" alt="Menú">
                 </button>
             </div>
 
             <!-- DESKTOP -->
-            <div class="col-md-6 d-none d-md-flex justify-content-center">
+            <div class="col-lg-6 d-none d-lg-flex justify-content-center">
                 <ul id="Navegacion" class="nav-menu d-flex gap-4 mb-0  mt-4">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a class="active" href="./portafolio.html">Portafolio</a></li>
@@ -42,7 +43,7 @@
                 </ul>
             </div>
 
-            <div class="col-md-3 d-none d-md-flex justify-content-end">
+            <div class="col-lg-3 d-none d-lg-flex justify-content-end">
                 <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0 mt-4">
                     <li><a href="./login.html">Login</a></li>
                     <li><a href="./registro.html">Postúlate</a></li>
@@ -54,7 +55,7 @@
 </div>
 
 <!-- MENÚ MOBILE -->
-<div id="mobileNav" class="mobile-nav d-md-none">
+<div id="mobileNav" class="mobile-nav d-lg-none">
     <ul class="d-flex flex-column gap-4 text-center pt-5">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./portafolio.html">Portafolio</a></li>
@@ -69,43 +70,41 @@
 
 <div id="header" class="container-fluid position-relative d-flex justify-content-center align-items-center">
 
-    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center w-100 h-100">
+    <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
 
         <div id="presentacion" class="text-center d-flex flex-column justify-content-center align-items-center">
             <h1>Juan Pablo Ortiz</h1>
-            <h2>GRAPHIC & WEB DESIGNER</h2>
+            <h3>GRAPHIC & WEB DESIGNER</h3>
 
-            <div id="marca">
-                <h2>Xero Design</h2>
+            <div class="marca">
+              <h4>Xero Design</h4>
             </div>
 
-            <ul id="Cont_Redes" class="d-flex justify-content-center align-items-center gap-2 mt-2">
-                <li>
-                    <a href="https://www.instagram.com/xerodgn/" target="_blank">
-                        <div class="Redes d-flex flex-column justify-content-center align-items-center">
-                            <img src="../assets/icons/ig.svg" alt="Logo instagram">
-                            <h3>/xerodgn</h3>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://x.com/Xero_DGN" target="_blank">
-                        <div class="Redes d-flex flex-column justify-content-center align-items-center">
-                            <img src="../assets/icons/x.svg" alt="Logo x">
-                            <h3>/Xero_DGN</h3>
-                        </div>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="https://www.behance.net/xero_design" target="_blank">
-                        <div class="Redes d-flex flex-column justify-content-center align-items-center">
-                            <img src="../assets/icons/be.svg" alt="Logo behance">
-                            <h3>/xero_design</h3>
-                        </div>
-                    </a>
-                </li>
+            <ul id="cont_redes" class="d-flex justify-content-center align-items-center gap-2 mt-2">
+              <li>
+                <a href="https://www.instagram.com/xerodgn/" target="_blank">
+                  <div class="redes d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/icons/ig.svg" alt="Logo instagram">
+                    <h5>/xerodgn</h5>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/Xero_DGN" target="_blank">
+                  <div class="redes d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/icons/x.svg" alt="Logo x">
+                    <h5>/Xero_DGN</h5>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/xero_design" target="_blank">
+                  <div class="redes d-flex flex-column justify-content-center align-items-center">
+                    <img src="../assets/icons/be.svg" alt="Logo behance">
+                    <h4>/xero_design</h4>
+                  </div>
+                </a>
+              </li>
             </ul>
         </div>
 
@@ -116,30 +115,30 @@
 
 <div class="marcas_carrusel">
     <marquee behavior="scroll" direction="right" scrollamount="5" loop="infinite">
-        <ul id="marcas">
-            <li><h4>2021</h4></li>
+        <ul id="slide_marcas">
+            <li><h3>2021</h3></li>
             <li><img src="../assets/pictures/realme.png" alt="Logo realme"></li>
 
-            <li><h4>2023</h4></li>
+            <li><h3>2023</h3></li>
             <li><img src="../assets/pictures/panthera.svg" alt="Logo panthera"></li>
 
-            <li><h4>2024</h4></li>
+            <li><h3>2024</h3></li>
             <li><img src="../assets/pictures/montana.svg" alt="Logo montana"></li>
 
-            <li><h4>2025</h4></li>
+            <li><h3>2025</h3></li>
             <li><img src="../assets/pictures/adb.svg" alt="Logo adb"></li>
 
-
-            <li><h4>2021</h4></li>
+            <!-- DUPLICADO PARA LOOP SUAVE -->
+            <li><h3>2021</h3></li>
             <li><img src="../assets/pictures/realme.png" alt="Logo realme"></li>
 
-            <li><h4>2023</h4></li>
+            <li><h3>2023</h3></li>
             <li><img src="../assets/pictures/panthera.svg" alt="Logo panthera"></li>
 
-            <li><h4>2024</h4></li>
+            <li><h3>2024</h3></li>
             <li><img src="../assets/pictures/montana.svg" alt="Logo montana"></li>
 
-            <li><h4>2025</h4></li>
+            <li><h3>2025</h3></li>
             <li><img src="../assets/pictures/adb.svg" alt="Logo adb"></li>
         </ul>
     </marquee>
@@ -189,18 +188,18 @@
                       
 <footer class="footer container-fluid py-4">
     <div class="container">
-        <div class="row align-items-center text-center text-md-start gy-4">
+        <div class="row align-items-center text-center text-lg-start gy-4">
 
-            <div class="col-auto col-md d-flex justify-content-center">
+            <div class="col-12 col-lg-auto d-flex justify-content-center">
                 <img src="../assets/icons/logo_white.svg" alt="Logo" class="footer-logo">
             </div>
 
-            <div class="d-none d-md-flex col-md-auto justify-content-center">
+            <div class="d-none d-lg-flex col-lg-auto justify-content-center">
                 <div class="footer_separacion"></div>
             </div>
 
-            <div class="col-12 col-md-auto d-flex justify-content-center">
-                <ul class="footer_menu d-flex flex-column flex-md-row gap-3 gap-md-5 list-unstyled mb-0">
+            <div class="col-12 col-lg d-flex justify-content-center">
+                <ul class="footer_menu d-flex flex-column flex-lg-row gap-3 gap-lg-5 list-unstyled mb-0">
                     <li><a href="">Inicio</a></li>
                     <li><a href="./portafolio.html">Portafolio</a></li>
                     <li><a href="./sobremi.html">Sobre mí</a></li>
@@ -210,11 +209,11 @@
                 </ul>
             </div>
 
-            <div class="d-none d-md-flex col-md-auto justify-content-center">
+            <div class="d-none d-lg-flex col-lg-auto justify-content-center">
                 <div class="footer_separacion"></div>
             </div>
 
-            <div class="col-12 col-md-auto d-flex justify-content-center gap-4">
+            <div class="col-12 col-lg-auto d-flex justify-content-center gap-4">
                 <a href="https://x.com/Xero_DGN" target="_blank">
                     <img src="../assets/icons/x.svg" alt="logo X">
                 </a>

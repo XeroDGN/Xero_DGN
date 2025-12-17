@@ -17,24 +17,40 @@ body {
     --footer: #0B0B23;
 }
 
-h1{ 
-    font-size: 50px; 
+h1 {
+    font-size: clamp(45px, 5vw, 65px);
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+h2{ 
+    font-size: clamp(30px, 4vw, 50px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
     font-weight: 900; 
     color: white; 
 } 
 
-h2{ 
-    font-size: 20px; 
+h3{ 
+    font-size: clamp(16px, 2vw, 20px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
-    font-weight: 400; 
+    font-weight: 900; 
     color: white; 
-} 
+}
 
-h3{ 
-    font-size: 12px; 
+h4{ 
+    font-size: clamp(13px, 2vw, 15px); 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    color: white; 
+}
+
+h5{ 
+    font-size: clamp(10px, 2vw, 13px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
     font-weight: 300; 
@@ -47,13 +63,25 @@ ul{
     padding: 0; 
 }
 
+strong{
+    font-weight: 400;
+}
+
 a {
     color: white;
     outline: none;
     box-shadow: none;
     text-decoration: none;
-    font-size: 15px;
+    font-size: clamp(12px, 2vw, 15px);
     font-weight: 400;
+}
+
+p{
+    font-size: clamp(10px, 2vw, 14px);
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    margin: 0; 
+    color: var(--text2);
 }
 
 /*------------------------Navegador----------------------*/
@@ -71,7 +99,6 @@ a {
     padding-bottom: 14px;
 }
 
-/* LOGO */
 .logo {
     width: 48px;
 }
@@ -102,7 +129,6 @@ a {
     background: var(--red);
 }
 
-/* ================= BOTÓN HAMBURGUESA ================= */
 
 .btn-menu {
     background: none;
@@ -141,6 +167,17 @@ a {
         rgba(74, 50, 195, 0.6) 0%,
         rgba(3, 2, 28, 1) 50%);
     width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header2 {
+    background: radial-gradient(circle at bottom,
+        rgba(231, 6, 96, 0.6) 0%,
+        rgb(32, 0, 22) 50%);
+    width: 100%;
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -154,7 +191,6 @@ a {
 }
 
 #presentacion {
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,14 +198,24 @@ a {
     text-align: center;
 }
 
-#marca {
+.marca {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--red);
     padding: 5px 20px;
     margin-top: 10px;
     border-radius: 10px;
+    transition: all 0.3s ease;
 }
 
-.Redes {
+.marca:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 43, 74, 0.35);
+    color: #fff;
+}
+
+.redes {
     background-color: var(--cont1);
     padding: 5px 30px;
     border-radius: 10px;
@@ -197,35 +243,31 @@ a {
     );
 }
 
-#marcas {
+#slide_marcas {
     display: inline-flex;
     align-items: center;
     gap: 50px;
-    list-style: none;
     padding: 0;
     margin: 0;
 }
 
-#marcas img {
+#slide_marcas h3{
+    font-weight: 900;
+    opacity: 30%;
+}
+
+#slide_marcas img {
     height: 40px;
     width: auto;
 }
 
-#marcas h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: rgba(255, 255, 255, 0.3);
-    margin: 0;
-}
-
-#marcas li {
+#slide_marcas li {
     display: inline-flex;
     align-items: center;
     margin-right: 40px;
 }
 
-/* ESPACIO ENTRE ORIGINAL Y DUPLICADO */
-#marcas li:nth-child(8) {
+#slide_marcas li:nth-child(8) {
     margin-right: 500px;
 }
 
@@ -265,6 +307,7 @@ a {
 
 
 /*------------------------Footer----------------------*/
+
 .footer {
     background: var(--footer);
 }
@@ -281,11 +324,7 @@ a {
 }
 
 .footer_menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
     transition: 0.3s ease;
-    font-size: 16px;
 }
 
 .footer_menu a:hover {

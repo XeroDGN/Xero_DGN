@@ -13,28 +13,27 @@
   </head>
   <body>
 
-<!--==================== MENU ====================-->
-
+<!--                     NAVEGADOR                        -->   
 <div id="menu" class="container-fluid px-4 pt-0">
 
     <div class="container">
 
-
+        <!-- HEADER -->
         <div class="row align-items-start justify-content-between">
 
-            <div class="col-auto col-md-3 pt-0">
+            <div class="col-auto col-lg-3 pt-0">
                 <img src="../assets/pictures/tarjeta.png" class="logo mt-0" alt="Logo">
             </div>
 
             <!-- BOTÓN  MOBILE -->
-            <div class="col-auto d-md-none mt-4">
+            <div class="col-auto d-lg-none mt-4">
                 <button id="btnMenu" class="btn-menu">
                     <img src="../assets/icons/nav.svg" id="iconMenu" alt="Menú">
                 </button>
             </div>
 
             <!-- DESKTOP -->
-            <div class="col-md-6 d-none d-md-flex justify-content-center">
+            <div class="col-lg-6 d-none d-lg-flex justify-content-center">
                 <ul id="Navegacion" class="nav-menu d-flex gap-4 mb-0  mt-4">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a href="./portafolio.html">Portafolio</a></li>
@@ -43,28 +42,15 @@
                 </ul>
             </div>
 
-            <div class="col-md-3 d-none d-md-flex justify-content-end">
+            <div class="col-lg-3 d-none d-lg-flex justify-content-end">
                 <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0 mt-4">
                     <li><a href="./login.html">Login</a></li>
-                    <li><a href="./registro.html">Postúlate</a></li>
+                    <li><a href="./registro.html">Registro</a></li>
                 </ul>
             </div>
 
         </div>
     </div>
-</div>
-
-<!-- MENÚ MOBILE -->
-
-<div id="mobileNav" class="mobile-nav d-md-none">
-    <ul class="d-flex flex-column gap-4 text-center pt-5">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./portafolio.html">Portafolio</a></li>
-        <li><a href="./sobremi.html">Sobre mí</a></li>
-        <li><a href="./contactame.html">Contáctame</a></li>
-        <li><a href="./login.html">Login</a></li>
-        <li><a href="./registro.html">Registro</a></li>
-    </ul>
 </div>
 
 <!--==================== SOBRE MI ====================-->
@@ -76,22 +62,22 @@
             <!-- FOTO Y SOBRE MI -->
             <div class="col-12 col-md-6 d-flex flex-column justify-content-end gap-3 text-center text-md-start">
                 <img src="../assets/pictures/foto.png" alt="Foto Juanpa Ortiz" class="img-fluid mx-auto mx-md-0" id="Foto">
-                <h1>Sobre mí</h1>
-                <p><b>Soy una persona apasionada y ambiciosa</b> por reflejar en mis diseños historias y emociones impactantes. Me adapto fácilmente a los contextos, 
+                <h2>Sobre mí</h2>
+                <h4><strong>Soy una persona apasionada y ambiciosa</strong> por reflejar en mis diseños historias y emociones impactantes. Me adapto fácilmente a los contextos, 
                   y siempre estoy en constante aprendizaje sobre las nuevas tendencias y técnicas. Me gusta inspirar mediante mis piezas gráficas, y crear páginas 
-                  contundentes y prácticas para el público.</p>
+                  contundentes y prácticas para el público.</h4>
             </div>
 
             <!-- CONTACTO -->
             <div class="col-12 col-md-4">
-                <div id="contactame">
-                    <h1 class="mb-3 text-center text-md-start">Contáctame</h1>
+                <div class="contenedor1">
+                    <h2 class="mb-3 text-center text-md-start">Contáctame</h2>
 
                     <div class="contact d-flex align-items-center gap-3 mb-3">
                         <img src="../assets/icons/email.svg" alt="Icono mail">
                         <div>
-                            <h2 class="h6 mb-0">Mail:</h2>
-                            <h3 class="h6 mb-0">juanpaortizb@outlook.com</h3>
+                            <h3 class="mb-0">Mail:</h3>
+                            <p class="mb-0">juanpaortizb@outlook.com</p>
                         </div>
                     </div>
 
@@ -99,27 +85,27 @@
                         <div class="contact d-flex align-items-center gap-3 mb-3">
                             <img src="../assets/icons/cell.svg" alt="Icono telefono">
                             <div>
-                                <h2 class="h6 mb-0">Teléfono:</h2>
-                                <h3 class="h6 mb-0">+57 317 486 3433</h3>
+                                <h3 class="mb-0">Teléfono:</h3>
+                                <p class="mb-0">+57 317 486 3433</p>
                             </div>
                         </div>
                     </a>
 
                     <div class="d-flex flex-column gap-3">
 
-                        <div class="Info">
+                        <div class="info">
                             <img src="../assets/icons/trabajo.svg" alt="Icono experiencia">
                             <div>
-                                <h2 class="h6 mb-0">Experiencia</h2>
-                                <h3 class="h6 mb-0">+5 Años</h3>
+                                <h3 class="mb-0">Experiencia</h3>
+                                <p class="mb-0">+5 Años</p>
                             </div>
                         </div>
 
-                        <div class="Info">
+                        <div class="info">
                             <img src="../assets/icons/especializacion.svg" alt="Icono especialización">
                             <div>
-                                <h2 class="h6 mb-0">Especialización</h2>
-                                <h3 class="h6 mb-0">Diseñador publicitario en medios digitales</h3>
+                                <h3 class="mb-0">Especialización</h3>
+                                <p class="mb-0">Diseñador publicitario en medios digitales</p>
                             </div>
                         </div>
 
@@ -138,46 +124,46 @@
         <!-- MISIÓN -->
         <div class="col-12 col-md-5">
             <div class="card-info card-experiencia h-100">
-                <h1 class="mb-4">Misión</h1>
-                <p>
-                  Soy un diseñador apasionado y comprometido, con un profundo amor por el arte y la forma. 
+                <h2 class="mb-4">Misión</h2>
+                <h4>
+                  <strong>Soy un diseñador apasionado y comprometido,</strong> con un profundo amor por el arte y la forma. 
                   Me esfuerzo constantemente por mejorar tanto a nivel personal como profesional, y mi objetivo 
                   es capturar y transmitir emociones y sensaciones a través de mi trabajo. Estoy dedicado a crear 
                   diseños que resuenen con el público y dejen una impresión duradera.
-                </p>
+                </h4>
             </div>
         </div>
 
         <!-- VISIÓN -->
         <div class="col-12 col-md-5">
             <div class="card-info h-100">
-                <h1 class="mb-4">Visión</h1>
-                <p>
+                <h2 class="mb-4">Visión</h2>
+                <h4>
                   Mi visión es crear un emprendimiento exitoso de venta de figuras, alcanzar la estabilidad 
-                  económica y lograr que mi arte sea reconocido a nivel mundial, inspirando a personas de 
+                  económica y lograr que <strong>mi arte sea reconocido a nivel mundial</strong> inspirando a personas de 
                   todas partes.
-                </p>
+                </h4>
             </div>
         </div>
 
     </div>
 </div>
 
- <!--                     EXPERIENCIA                        -->   
+<!--                     EXPERIENCIA                        -->   
 
 <div class="container my-5 py-5">
   <div class="row justify-content-center g-4">
 
     <!-- EDUCACIÓN -->
-    <div class="col-12 col-md-5 ">
+    <div class="col-12 col-lg-5 d-flex align-items-center">
       <div class="p-4 card-info">
 
-        <h1 class="mb-4">Educación</h1>
+        <h2 class="mb-4">Educación</h2>
 
         <div class="item-info">
           <div>
-            <h2>Bootcamp:</h2>
-            <h3>Desarrollo web</h3>
+            <h3>Bootcamp:</h3>
+            <h4>Desarrollo web</h4>
             <p>BIT - Universidad iberoamericana</p>
           </div>
           <span class="fecha">2025 - Actual</span>
@@ -185,8 +171,8 @@
 
         <div class="item-info">
           <div>
-            <h2>Especialización:</h2>
-            <h3>Diseño publicitario en medios digitales</h3>
+            <h3>Especialización:</h3>
+            <h4>Diseño publicitario en medios digitales</h4>
             <p>Universidad autónoma de occidente</p>
           </div>
           <span class="fecha">2024 - 2025</span>
@@ -194,8 +180,8 @@
 
         <div class="item-info">
           <div>
-            <h2>Título universitario:</h2>
-            <h3>Diseño de la Comunicación Gráfica</h3>
+            <h3>Título universitario:</h3>
+            <h4>Diseño de la Comunicación Gráfica</h4>
             <p>Universidad autónoma de occidente</p>
           </div>
           <span class="fecha">2019 - 2024</span>
@@ -205,10 +191,10 @@
     </div>
 
     <!-- EXPERIENCIA -->
-    <div class="col-12 col-md-5">
+    <div class="col-12 col-lg-5">
       <div class="p-4 card-exp position-relative">
 
-        <h1 class="mb-4">Experiencia</h1>
+        <h2 class="mb-4">Experiencia</h2>
 
         <div class="linea-experiencia"></div>
 
@@ -218,10 +204,10 @@
           </div>
           <div class="exp-content">
             <div class="exp-header">
-              <h2>ADB:</h2>
+              <h3>ADB:</h3>
             </div>
-            <h3>Graphic & web designer</h3>
-            <p>Producción de contenido visual para redes sociales, impresos y 
+            <h4>Graphic & web designer</h4>
+            <p class="mt-2">Producción de contenido visual para redes sociales, impresos y 
               prototipos web, alineados con los objetivos de comunicación de 
               los clientes de la agencia.</p>
           </div>
@@ -234,10 +220,10 @@
           </div>
           <div class="exp-content">
             <div class="exp-header">
-              <h2>Portafolio Montana:</h2>
+              <h3>Portafolio Montana:</h3>
             </div>
-            <h3>Graphic & audiovisual designer</h3>
-            <p>Diseño de piezas publicitarias para entornos digitales y físicos, 
+            <h4>Graphic & audiovisual designer</h4>
+            <p class="mt-2">Diseño de piezas publicitarias para entornos digitales y físicos, 
               incluyendo redes sociales, material impreso, fotografía y cobertura 
               de eventos.</p>
           </div>
@@ -250,10 +236,10 @@
           </div>
           <div class="exp-content">
             <div class="exp-header">
-              <h2>Panthera Hub:</h2>
+              <h3>Panthera Hub:</h3>
             </div>
-            <h3>Graphic & web designer <span class="badge-practicas">Prácticas</span></h3>
-            <p>Creación de piezas publicitarios para redes sociales y prototipado 
+            <h4>Graphic & web designer <span class="badge-practicas">Prácticas</span></h4>
+            <p class="mt-2">Creación de piezas publicitarios para redes sociales y prototipado 
               web para clientes de la agencia.</p>
           </div>
           <span class="fecha">Dic 2023 - May 2024</span>
@@ -265,10 +251,10 @@
           </div>
           <div class="exp-content">
             <div class="exp-header">
-              <h2>Freelance:</h2>
+              <h3>Freelance:</h3>
             </div>
-            <h3>Graphic designer</h3>
-            <p>Diseño de diferentes piezas graficas, ilustraciones, marcas visuales para 
+            <h4>Graphic designer</h4>
+            <p class="mt-2">Diseño de diferentes piezas graficas, ilustraciones, marcas visuales para 
               diferentes personas, eventos y empresas.</p>
           </div>
           <span class="fecha">2019 - 2023</span>
@@ -284,42 +270,33 @@
 
 <div class="container my-5 py-5">
 
-    <!-- TÍTULO -->
     <div class="text-center mb-4">
-        <span class="badge titulo-portadas">Proyectos destacados</span>
+        <span class="titulo-portadas">Proyectos destacados</span>
     </div>
 
     <!-- PORTADAS -->
     <div class="row g-3">
 
-        <div class="col-6 col-md-3">
-            <a href="" class="portada-link">
+        <div class="col-6 col-md-4">
+            <a href="./a_phantera.html" class="portada-link">
                 <img src="../assets/pictures/portada_panthera.png"
                      alt="Proyecto Pantera"
                      class="img-fluid portada-img">
             </a>
         </div>
 
-        <div class="col-6 col-md-3">
-            <a href="" class="portada-link">
+        <div class="col-6 col-md-4">
+            <a href="./a_alltruismo.html" class="portada-link">
                 <img src="../assets/pictures/portada_alltruismo.png"
                      alt="Proyecto Alltruismo"
                      class="img-fluid portada-img">
             </a>
         </div>
 
-        <div class="col-6 col-md-3">
-            <a href="" class="portada-link">
+        <div class="col-6 col-md-4">
+            <a href="./a_aleluya.html" class="portada-link">
                 <img src="../assets/pictures/portada_aleluya.png"
                      alt="Proyecto Aleluya"
-                     class="img-fluid portada-img">
-            </a>
-        </div>
-
-        <div class="col-6 col-md-3">
-            <a href="" class="portada-link">
-                <img src="../assets/pictures/portada_luuciia.png"
-                     alt="Proyecto Luuciia"
                      class="img-fluid portada-img">
             </a>
         </div>
@@ -328,22 +305,22 @@
 
 </div>
 
- <!--                     Footer                        -->
+<!--                     Footer                        -->
                       
 <footer class="footer container-fluid py-4">
     <div class="container">
-        <div class="row align-items-center text-center text-md-start gy-4">
+        <div class="row align-items-center text-center text-lg-start gy-4">
 
-            <div class="col-12 col-md-auto d-flex justify-content-center">
+            <div class="col-12 col-lg-auto d-flex justify-content-center">
                 <img src="../assets/icons/logo_white.svg" alt="Logo" class="footer-logo">
             </div>
 
-            <div class="d-none d-md-flex col-md-auto justify-content-center">
+            <div class="d-none d-lg-flex col-lg-auto justify-content-center">
                 <div class="footer_separacion"></div>
             </div>
 
-            <div class="col-auto col-md d-flex justify-content-center">
-                <ul class="footer_menu d-flex flex-column flex-md-row gap-3 gap-md-5 list-unstyled mb-0">
+            <div class="col-12 col-lg d-flex justify-content-center">
+                <ul class="footer_menu d-flex flex-column flex-lg-row gap-3 gap-lg-5 list-unstyled mb-0">
                     <li><a href="">Inicio</a></li>
                     <li><a href="./portafolio.html">Portafolio</a></li>
                     <li><a href="./sobremi.html">Sobre mí</a></li>
@@ -353,11 +330,11 @@
                 </ul>
             </div>
 
-            <div class="d-none d-md-flex col-md-auto justify-content-center">
+            <div class="d-none d-lg-flex col-lg-auto justify-content-center">
                 <div class="footer_separacion"></div>
             </div>
 
-            <div class="col-12 col-md-auto d-flex justify-content-center gap-4">
+            <div class="col-12 col-lg-auto d-flex justify-content-center gap-4">
                 <a href="https://x.com/Xero_DGN" target="_blank">
                     <img src="../assets/icons/x.svg" alt="logo X">
                 </a>
