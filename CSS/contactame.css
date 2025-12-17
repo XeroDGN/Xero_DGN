@@ -244,16 +244,26 @@ a {
     border-radius: 20px;
 }
 
-/* ================= TEXTOS + ICONOS ================= */
-
-.icon_text {
+.red-social {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 14px;
+    margin-top: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-/* ================= FORMULARIO ================= */
+.red-social img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.red-social:hover {
+    transform: translateX(4px);
+    opacity: 0.9;
+}
 
 .formulario {
     background-color: var(--fondo);
@@ -277,15 +287,11 @@ a {
     opacity: 0.6;
 }
 
-/* ================= CHECKBOX ================= */
-
 #terminos {
     width: 18px;
     height: 18px;
     accent-color: var(--violeta);
 }
-
-/* ================= BOTÓN ================= */
 
 .boton {
     background: var(--violeta);

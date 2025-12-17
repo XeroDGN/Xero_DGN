@@ -45,7 +45,7 @@
             <div class="col-md-3 d-none d-md-flex justify-content-end">
                 <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0 mt-4">
                     <li><a href="./login.html">Login</a></li>
-                    <li><a href="./registro.html">Registro</a></li>
+                    <li><a href="./registro.html">Postúlate</a></li>
                 </ul>
             </div>
 
@@ -147,54 +147,51 @@
 
  <!--                     FORMULARIO                        -->   
 
-<div class="container min-vh-100 d-flex align-items-center py-5">
-  <div class="row justify-content-center w-100 g-4">
+<div class="container my-5 py-5">
+  <div class="row justify-content-center gap-4 w-100">
 
     <!-- IZQUIERDA -->
-    <div class="col-12 col-lg-7 p-4" id="izquierda">
+    <div class="col-12 col-md-6 p-4" id="izquierda">
 
-      <h1 class="text-center text-md-start">Lleva tu marca</h1>
-      <h2 class="text-center text-md-start">al siguiente nivel:</h2>
+      <h1>Lleva tu marca</h1>
+      <h2>al siguiente nivel:</h2>
 
       <!-- Nombre - Empresa -->
       <div class="row mt-4 g-3">
-        <div class="col-12 col-md-6">
-          <input type="text" class="formulario" placeholder="Nombre*">
+        <div class="col-md-6">
+          <input type="text" class="formulario" id="nombre" placeholder="Nombre">
         </div>
-        <div class="col-12 col-md-6">
-          <input type="text" class="formulario" placeholder="Empresa*">
+        <div class="col-md-6">
+          <input type="text" class="formulario" id="empresa"  placeholder="Empresa">
         </div>
       </div>
 
       <!-- Email - Teléfono -->
       <div class="row mt-3 g-3">
-        <div class="col-12 col-md-6">
-          <input type="email" class="formulario" placeholder="Email*">
+        <div class="col-md-6">
+          <input type="email" class="formulario" id="email" placeholder="Email">
         </div>
-        <div class="col-12 col-md-6">
-          <input type="text" class="formulario" placeholder="Teléfono*">
+        <div class="col-md-6">
+          <input type="text" class="formulario" id="telefono" placeholder="Teléfono">
         </div>
       </div>
 
       <!-- Descripción -->
       <div class="row mt-3">
         <div class="col-12">
-          <textarea
-            class="formulario"
-            rows="4"
-            placeholder="Resumen breve de tus habilidades y aspiración salarial.*">
-          </textarea>
+          <textarea class="formulario" rows="4" id="habilidades"
+            placeholder="Describe brevemente la solución visual que necesitas y el objetivo del proyecto."></textarea>
         </div>
       </div>
 
       <!-- Términos + botón -->
-      <div class="row mt-4 align-items-center g-3">
-        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center justify-content-md-start">
+      <div class="row mt-4 align-items-center">
+        <div class="col-md-6 d-flex align-items-center">
           <input type="checkbox" id="terminos" class="me-2">
           <h3 class="mb-0">Acepto términos y condiciones</h3>
         </div>
 
-        <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end">
+        <div class="col-md-6 d-flex justify-content-md-end mt-3 mt-md-0">
           <button class="boton">Enviar</button>
         </div>
       </div>
@@ -202,47 +199,60 @@
     </div>
 
     <!-- DERECHA -->
-    <div class="col-12 col-lg-5 d-flex flex-column gap-4">
+    <div class="col-12 col-md-4 d-flex flex-column gap-4">
 
       <!-- Contáctame -->
-      <div class="p-4 derecha text-center text-md-start">
+      <div class="p-4 derecha">
         <h1>Contáctame</h1>
 
-        <div class="icon_text">
+        <div class="red-social">
           <img src="../assets/icons/email.svg" width="20">
+          <div class="red-texto">
           <h2>Mail:</h2>
+          <h3>juanpaortizb@outlook.com</h3>
+          </div>
         </div>
-        <h3>juanpaortizb@outlook.com</h3>
 
-        <div class="icon_text">
+        <div class="red-social">
           <img src="../assets/icons/cell.svg" width="20">
+          <div class="red-texto">
           <h2>Teléfono:</h2>
+          <h3>+57 317 486 3433</h3>
+          </div>
         </div>
-        <h3>+57 317 486 3433</h3>
       </div>
 
       <!-- Redes sociales -->
-      <div class="p-4 derecha text-center text-md-start">
-        <h1>Redes sociales</h1>
+      <div class="p-4 derecha">
+  <h1>Redes sociales</h1>
 
-        <div class="icon_text">
-          <img src="../assets/icons/ig.svg" width="20">
-          <h2>Instagram:</h2>
-        </div>
-        <h3>/xerodgn</h3>
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/xerodgn" target="_blank" class="red-social">
+    <img src="../assets/icons/ig.svg" alt="Instagram">
+    <div class="red-texto">
+      <h2>Instagram</h2>
+      <h3>/xerodgn</h3>
+    </div>
+  </a>
 
-        <div class="icon_text">
-          <img src="../assets/icons/x.svg" width="20">
-          <h2>X:</h2>
-        </div>
-        <h3>/Xero_DGN</h3>
+  <!-- X -->
+  <a href="https://x.com/Xero_DGN" target="_blank" class="red-social">
+    <img src="../assets/icons/x.svg" alt="X">
+    <div class="red-texto">
+      <h2>X</h2>
+      <h3>/Xero_DGN</h3>
+    </div>
+  </a>
 
-        <div class="icon_text">
-          <img src="../assets/icons/be.svg" width="20">
-          <h2>Behance:</h2>
-        </div>
-        <h3>/xero_design</h3>
-      </div>
+  <!-- Behance -->
+  <a href="https://www.behance.net/xero_design" target="_blank" class="red-social">
+    <img src="../assets/icons/be.svg" alt="Behance">
+    <div class="red-texto">
+      <h2>Behance</h2>
+      <h3>/xero_design</h3>
+    </div>
+  </a>
+</div>
 
     </div>
 

@@ -481,11 +481,25 @@ p{
     border-radius: 20px;
 }
 
-.icon_text {
+.red-social {
     display: flex;
     align-items: center;
-    gap: 10px;
-    margin-top: 15px;
+    gap: 14px;
+    margin-top: 18px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.red-social img {
+    width: 26px;
+    height: 26px;
+    object-fit: contain;
+}
+
+.red-social:hover {
+    transform: translateX(4px);
+    opacity: 0.9;
 }
 
 .formulario {
