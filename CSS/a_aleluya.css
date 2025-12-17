@@ -71,7 +71,6 @@ a {
     padding-bottom: 14px;
 }
 
-/* LOGO */
 .logo {
     width: 48px;
 }
@@ -97,7 +96,6 @@ a {
     background: var(--boton);
 }
 
-/* LOGIN CTA */
 #Accesos li:first-child a {
     background: var(--red);
 }
@@ -149,10 +147,6 @@ a {
   overflow: visible;
 }
 
-/* =========================
-   TOPBAR
-========================= */
-
 .topbar {
   position: absolute;
   top: 20px;
@@ -163,17 +157,6 @@ a {
   align-items: center;
   justify-content: space-between;
 }
-
-/* Logo pequeño (X visual) */
-.logo-topbar {
-  width: 14px;
-  opacity: 0.85;
-  pointer-events: none;
-}
-
-/* =========================
-   TAGS
-========================= */
 
 .tags {
   display: flex;
@@ -198,10 +181,6 @@ a {
   background: #e3173e;
 }
 
-/* =========================
-   CONTENIDO HEADER
-========================= */
-
 .header-content {
   text-align: center;
 }
@@ -211,15 +190,10 @@ a {
   margin-bottom: 12px;
 }
 
-/* Logo Panthera */
 .logo-panthera {
   max-width: 180px;
-  margin-bottom: 20px; /* más cerca del mockup */
+  margin-bottom: 20px;
 }
-
-/* =========================
-   MOCKUP / BANNER
-========================= */
 
 .mockup-wrapper {
   position: relative;
@@ -236,10 +210,6 @@ a {
   max-width: 760px;
   z-index: 2;
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 768px) {
 
@@ -268,16 +238,10 @@ a {
 
 /*------------------------proceso----------------------*/
 
-/* ===============================
-   CONTENEDOR GENERAL
-================================ */
 .project-info {
     color: #fff;
 }
 
-/* ===============================
-   ROLES
-================================ */
 .roles-list {
     display: flex;
     flex-direction: column;
@@ -309,9 +273,6 @@ a {
     object-fit: cover;
 }
 
-/* ===============================
-   TEXTOS DEL PROYECTO
-================================ */
 .project-text {
     margin-bottom: 28px;
 }
@@ -334,9 +295,6 @@ a {
     max-width: 90%;
 }
 
-/* ===============================
-   PROCESO DE TRABAJO
-================================ */
 .workflow {
     padding-left: 20px;
 }
@@ -377,9 +335,6 @@ a {
     opacity: 1;
 }
 
-/* ===============================
-   PIEZAS GRÁFICAS
-================================ */
 .graphic-pieces {
     color: #fff;
 }
@@ -413,9 +368,6 @@ a {
     margin-bottom: 16px;
 }
 
-/* ===============================
-   CHIPS
-================================ */
 .chips {
     display: flex;
     align-items: center;
@@ -438,9 +390,6 @@ a {
     height: auto;
 }
 
-/* ===============================
-   RESPONSIVE
-================================ */
 @media (max-width: 991px) {
     .workflow {
         padding-left: 0;

@@ -98,7 +98,6 @@ p{
     padding-bottom: 14px;
 }
 
-/* LOGO */
 .logo {
     width: 48px;
 }
@@ -129,7 +128,6 @@ p{
     background: var(--red);
 }
 
-/* ================= BOTÓN HAMBURGUESA ================= */
 
 .btn-menu {
     background: none;

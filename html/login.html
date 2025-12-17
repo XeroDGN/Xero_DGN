@@ -11,9 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Xero_Design</title>
   </head>
-  <body>
+  <body class="layout-login">
 
-<!--                     NAVEGADOR                        -->   
+ <!--                     NAVEGADOR                        -->   
+
 <div id="menu" class="container-fluid px-4 pt-0">
 
     <div class="container">
@@ -45,35 +46,23 @@
             <div class="col-lg-3 d-none d-lg-flex justify-content-end">
                 <ul id="Accesos" class="nav-menu d-flex gap-3 mb-0 mt-4">
                     <li><a href="./login.html">Login</a></li>
-                    <li><a href="./registro.html">Registro</a></li>
+                    <li><a href="./registro.html">Postúlate</a></li>
                 </ul>
             </div>
 
         </div>
     </div>
 </div>
-
-<!-- MENÚ MOBILE -->
-<div id="mobileNav" class="mobile-nav d-lg-none">
-    <ul class="d-flex flex-column gap-4 text-center pt-5">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./portafolio.html">Portafolio</a></li>
-        <li><a href="./sobremi.html">Sobre mí</a></li>
-        <li><a href="./contactame.html">Contáctame</a></li>
-        <li><a href="./login.html">Login</a></li>
-        <li><a href="./registro.html">Postúlate</a></li>
-    </ul>
-</div>
  
  <!--                     FORMULARIO                        -->   
 
-<div class="container d-flex justify-content-center align-items-center min-vh-100">
+<div class="container flex-grow-1 d-flex justify-content-center align-items-center">
   <div class="row justify-content-center w-100">
 
     <div class="col-12 col-md-6 p-4" id="izquierda">
 
-      <h1 class="mb-2">Continúa explorando</h1>
-      <h2 class="mb-4">Información estratégica de nuestro portafolio.</h2>
+      <h2 class="mb-2">Continúa explorando</h2>
+      <h3 class="mb-4">Información estratégica de nuestro portafolio.</h3>
 
       <div class="mb-3">
         <label for="email">Email</label>
@@ -90,12 +79,12 @@
           <input type="checkbox" id="rememberMe" class="me-2">
           <label for="rememberMe">Recordarme</label>
         </div>
-        <a href="#" class="boton-link">Olvidé mi contraseña</a>
+        <a href="" class="boton-link">Olvidé mi contraseña</a>
       </div>
 
       <button type="submit" class="boton w-100 mb-2">Iniciar sesión</button>
 
-      <p class="mb-0 text-white">
+      <p class="mb-0">
         No tienes una cuenta registrada? 
         <a href="./registro.html" class="text-primary">Postúlate</a>
       </p>

@@ -1,3 +1,8 @@
+.layout-login {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 body {
     background: radial-gradient(circle at right, rgba(25, 23, 68, 1), rgba(3, 2, 28, 1));
@@ -17,24 +22,40 @@ body {
     --footer: #0B0B23;
 }
 
-h1{ 
-    font-size: 50px; 
+h1 {
+    font-size: clamp(45px, 5vw, 65px);
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    color: white;
+}
+
+h2{ 
+    font-size: clamp(30px, 4vw, 50px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
     font-weight: 900; 
     color: white; 
 } 
 
-h2{ 
-    font-size: 20px; 
+h3{ 
+    font-size: clamp(16px, 2vw, 20px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
-    font-weight: 400; 
+    font-weight: 900; 
     color: white; 
-} 
+}
 
-h3{ 
-    font-size: 12px; 
+h4{ 
+    font-size: clamp(13px, 2vw, 15px); 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    color: white; 
+}
+
+h5{ 
+    font-size: clamp(10px, 2vw, 13px); 
     margin: 0; 
     font-family: "Lato", sans-serif; 
     font-weight: 300; 
@@ -47,13 +68,39 @@ ul{
     padding: 0; 
 }
 
+strong{
+    font-weight: 400;
+}
+
 a {
     color: white;
     outline: none;
     box-shadow: none;
     text-decoration: none;
-    font-size: 15px;
+    font-size: clamp(12px, 2vw, 15px);
     font-weight: 400;
+}
+
+p{
+    font-size: clamp(10px, 2vw, 14px);
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    margin: 0; 
+    color: var(--text2);
+}
+
+::placeholder {
+    font-size: 16px;
+    color: white;
+    opacity: 0.6;
+}
+
+label{ 
+    font-size: clamp(13px, 2vw, 15px); 
+    margin: 0; 
+    font-family: "Lato", sans-serif; 
+    font-weight: 300; 
+    color: white; 
 }
 
 /*------------------------Navegador----------------------*/
@@ -71,7 +118,6 @@ a {
     padding-bottom: 14px;
 }
 
-/* LOGO */
 .logo {
     width: 48px;
 }
@@ -102,7 +148,6 @@ a {
     background: var(--red);
 }
 
-/* ================= BOTÓN HAMBURGUESA ================= */
 
 .btn-menu {
     background: none;
@@ -143,9 +188,6 @@ a {
     border-radius: 20px;
 }
 
-
-/* ================= TEXTOS + ICONOS ================= */
-
 .icon_text {
     display: flex;
     align-items: center;
@@ -153,7 +195,6 @@ a {
     margin-top: 15px;
 }
 
-/* ================= FORMULARIO ================= */
 
 .formulario {
     background-color: var(--fondo);
@@ -173,32 +214,12 @@ a {
     border-color: var(--violeta);
 }
 
-/* Placeholder */
-.formulario::placeholder {
-    color: white;
-    opacity: 0.8;
-}
-
-/* Compatibilidad placeholder */
-::-webkit-input-placeholder { color: white; opacity: 0.8; }
-:-moz-placeholder { color: white; opacity: 0.8; }
-::-moz-placeholder { color: white; opacity: 0.8; }
-:-ms-input-placeholder { color: white; opacity: 0.8; }
-
-/* ================= LABELS ================= */
-label {
-    color: white;
-    font-weight: 400;
-}
-
-/* ================= CHECKBOX ================= */
 #terminos, #rememberMe {
     width: 18px;
     height: 18px;
     accent-color: var(--violeta);
 }
 
-/* ================= BOTÓN ================= */
 .boton {
     background: var(--violeta);
     color: white;

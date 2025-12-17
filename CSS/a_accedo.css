@@ -71,7 +71,6 @@ a {
     padding-bottom: 14px;
 }
 
-/* LOGO */
 .logo {
     width: 48px;
 }
@@ -97,7 +96,6 @@ a {
     background: var(--boton);
 }
 
-/* LOGIN CTA */
 #Accesos li:first-child a {
     background: var(--red);
 }
@@ -145,7 +143,7 @@ a {
   margin-bottom: 120px;
   padding: 120px 32px 0;
   border-radius: 28px;
-  background: linear-gradient(180deg, #3486DC 0%, #2324C5 100%);
+  background: linear-gradient(180deg, #FFBB00 0%, #FF006D 100%);
   overflow: visible;
 }
 
@@ -415,6 +413,7 @@ a {
         display: none;
     }
 }
+
 
 /*------------------------collage----------------------*/
 .collage img {
