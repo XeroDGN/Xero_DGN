@@ -251,6 +251,58 @@ p {
 
 /* ================= EXPERIENCIA ================= */
 
+.card-info {
+    background-color: var(--cont1);
+    border: 1px solid var(--boton);
+    border-radius: 20px;
+}
+
+.card-exp {
+    border: 1px solid var(--violeta);
+    background-color: var(--cont2);
+    border-radius: 20px;
+}
+
+/* ================= EDUCACIÓN ================= */
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.item-text {
+    max-width: 75%;
+}
+
+.item-info p {
+    font-size: 13px;
+    color: var(--text2);
+}
+
+.item-info .fecha {
+    font-size: 11px;
+    color: var(--text2);
+    white-space: nowrap;
+    margin-top: 4px;
+}
+
+
+.fecha {
+    font-size: 11px;
+    color: var(--text2);
+    white-space: nowrap;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 3;
+}
+
+/* ================= EXPERIENCIA ================= */
+
 .exp-item {
     display: flex;
     gap: 18px;
@@ -270,8 +322,6 @@ p {
     gap: 10px;
 }
 
-/* ================= ICONO ================= */
-
 .icono-exp {
     width: 42px;
     height: 42px;
@@ -281,13 +331,15 @@ p {
     align-items: center;
     justify-content: center;
     z-index: 3;
+    flex-shrink: 0;
 }
 
 .icono-exp img {
     width: 20px;
+    height: 20px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
-
-/* ================= LINEA ================= */
 
 .linea-experiencia {
     position: absolute;
@@ -299,8 +351,6 @@ p {
     z-index: 1;
     transform: translateX(-50%);
 }
-
-/* ================= EXTRAS ================= */
 
 .badge-practicas {
     background: var(--red);
