@@ -197,8 +197,30 @@ p{
 
 @media (max-width: 768px) {
     #header {
-        padding-top: 150px
+        padding-top: 80px;
     }
+}
+
+@media (max-width: 768px) {
+    #header2 {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #header3 {
+        padding-top: 150px;
+    }
+}
+
+@media (max-width: 767.98px) {
+
+  #header3 #Logo img {
+    max-width: 430px;
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 #presentacion {
